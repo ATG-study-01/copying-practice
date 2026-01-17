@@ -1,0 +1,183 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.wrapper {
+ width: 100%;
+ max-width: 1360px;
+ margin: 0 auto;
+ padding: 0 40px;
+}
+
+.content {
+ padding-top: 120px;
+ padding-bottom: 160px;
+}
+
+.site-title a {
+ width: 180px;
+ line-height: 1px;
+ display: block;
+}
+
+.page-title {
+ font-size: 0.8rem;
+ font-weight: normal;
+ margin-bottom: 30px;
+}
+/* ===PC用のスタイル=== */
+
+body {
+ font-family: "Noto Sans", "Noto Sans Japanese";
+ color: #24292E;
+ position: relative;
+ margin: 0;
+}
+
+img {
+ max-width: 100%;
+}
+
+li {
+ list-style: none;
+}
+
+a:hover {
+ opacity: 0.7;
+}
+
+/* ヘッダー */
+#header {
+ width: 100%;
+ height: 80px;
+ background-color: #fff;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ position: fixed;
+ left: 0;
+ right: 0;
+ z-index: 10;
+}
+
+/* ナビゲーションメニューのデフォ */
+#nav-open {
+ position: fixed;
+ top: 0;
+ left: -300px;
+ width: 300px;
+ color: #fff;
+ padding: 36px 50px;
+ transition: all 0.5s;
+ z-index: 20;
+ opacity: 0;
+}
+
+#nav-open a {
+ color: #fff;
+}
+
+#nav-open li {
+ margin-bottom: 14px;
+}
+
+/* .openが付与されたときのナビゲーションメニューの挙動 */
+.open #nav-open {
+ left: 0;
+ opacity: 1;
+}
+
+.openbtn {
+ width: 30px;
+ height: 30px;
+ position: relative;
+ transition: all, 0.5;
+ cursor: pointer;
+ z-index: 20;
+}
+
+.openbtn span {
+ display: inline-block;
+ transition: all 0.4s;
+ position: absolute;
+ background-color: #24292E;
+ height: 2px;
+ width: 30px;
+}
+
+/* ハンバーガーメニューのデフォ */
+.openbtn span:nth-of-type(1) {
+ top: 10px;
+}
+
+.openbtn span:nth-of-type(2) {
+ top: 18px;
+}
+
+/* .openが付与されたときのハンバーガーメニューの挙動 */
+.open .openbtn span {
+ background-color: #fff;
+}
+
+.open .openbtn span:nth-of-type(1) {
+ transform: translate(0, 4px) rotate(-45deg);
+}
+
+.open .openbtn span:nth-of-type(2) {
+ transform: translate(0, -4px)rotate(45deg);
+}
+
+#mask {
+ display: none;
+ transition: all 0.5s;
+}
+
+.open #mask{
+ display: block;
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-color: #000;
+ opacity: .8;
+ z-index: 10;
+ cursor: pointer;
+}
+
+/* メイン */
+#main-grid {
+ display: grid;
+ grid-template-columns:repeat(4, 1fr);
+ gap: 35px;
+ padding: 0;
+}
+
+#main-grid li p {
+ margin: 0;
+ font-size: 12px;
+}
+
+#main-grid li img {
+ margin-bottom: 10px;
+ vertical-align: top;
+}
+
+footer {
+ display: flex;
+ justify-content: space-between;
+}
+
+#sns-link {
+ display: flex;
+}
+
+#sns-link a {
+ font-size: 12px;
+ margin-right: 25px;
+}
+
+#sns-link a:link {
+ color: #24292E;
+ text-decoration: none;
+}
