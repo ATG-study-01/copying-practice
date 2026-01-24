@@ -1,0 +1,156 @@
+body {
+ font-family: 'Noto Sans Japanese';
+ background-color: #fff;
+ box-sizing: border-box;
+ margin: 0 auto 0 auto;
+}
+
+/* ヘッダー */
+header {
+ max-width: 980px;
+ width: 100%;
+ display: flex;
+ justify-content: space-between;
+ margin: auto;
+ align-items: center;
+ font-size: 34px;
+ font-weight: bold;
+}
+
+header > a {
+ border: 1px solid;
+ margin: 0;
+ padding: 3px 10px;
+}
+
+#nav-pc > ul {
+ display: flex;
+ padding-left: 0;
+}
+
+#nav-pc > ul > li {
+ list-style: none;
+ margin: 0 10px;
+}
+
+header a {
+ color: #000;
+ text-decoration: none;
+}
+
+/* メインビジュアル */
+#main-visual > img {
+ max-width: 1920px;
+ width: 100%;
+}
+
+/* About */
+h2 {
+ font-size: 34px;
+ margin-top: 50px;
+ text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+#about {
+ width: 820px;
+ margin: auto;
+}
+
+.title {
+ font-weight: bold;
+}
+
+#about-content {
+ display: flex;
+ align-items: center;
+}
+
+#about-content > div {
+ width: 50%;
+}
+
+#about-content img {
+ border-radius: 100%
+}
+
+/* Works */
+#works {
+ width: 820px;
+ margin: auto;
+}
+
+#works-content {
+ display: flex;
+ justify-content: space-between;
+}
+
+.works-child {
+  width: 32%;
+}
+
+.works-photo {
+ width: 100%;
+}
+
+.works-child > p {
+ margin-top: 5px;
+ font-size: 18px;
+}
+
+/* フッター */
+footer {
+ text-align: center;
+ padding: 50px 0 0 10px;
+ font-size: 18px;
+}
+
+/* =============
+SP用のスタイル
+==============*/
+@media screen and (max-width: 767px) {
+  header {
+  max-width: none;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 8px;
+  font-size: 20px;
+  }
+ 
+  #main-visual > img {
+  max-width: none;
+  width: 100%;
+ }
+
+  #about, #works {
+  width: 100%;
+  margin: 0;
+ }
+
+  #about-content, #works-content {
+  flex-direction: column;
+  justify-content: center;
+ }
+
+ #about-content > div, .works-child {
+  width: 100%;
+  text-align: center;
+ }
+
+#about-content > div > h3, ul {
+  text-align: left;
+}
+
+#about-content {
+  padding: 0 20px;
+}
+
+#works-content {
+ padding: 0 10px;
+}
+
+}
