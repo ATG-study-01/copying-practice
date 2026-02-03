@@ -9,66 +9,79 @@
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link href="https://fonts.googleapis.com/css2?family=Forum&family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Forum&family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header id="header">
-  <div class="header-inner">
-    <!-- SP用ハンバーガー -->
-    <div class="toggle_btn" aria-label="menu">
-      <span></span>
-      <span></span>
-    </div>
+   <!-- SP用ハンバーガー -->
+   <button class="toggle_btn" aria-label="menu">
+    <span></span>
+    <span></span>
+   </button>
 
-    <!-- SP用ナビ -->
-    <nav id="nav-sp">
-      <ul>
-        <li><a href="#section1">TOP</a></li>
-        <li><a href="#section2">WORKS</a></li>
-        <li><a href="#section3">SKILLS</a></li>
-        <li><a href="#section4">ABOUT</a></li>
-        <li><a href="#section5">CONTACT</a></li>
-      </ul>
-    </nav>
-  </div>
+   <!-- SP用ナビ -->
+   <nav id="nav-sp">
+    <ul>
+      <li><a href="#section1">TOP</a></li>
+      <li><a href="#section2">WORKS</a></li>
+      <li><a href="#section3">SKILLS</a></li>
+      <li><a href="#section4">ABOUT</a></li>
+      <li><a href="#section5">CONTACT</a></li>
+    </ul>
+   </nav>
+   <div id="mask"></div>
   </header>
 
   <nav id="nav-pc">
     <ul>
       <li class="nav-pc-button">
-      <a href="#section2">Works</a>
+      <a href="#section2">WORKS</a>
       </li>
       <li class="nav-pc-button">
-      <a href="#section3">Skills</a>
+      <a href="#section3">SKILLS</a>
       </li>
       <li class="nav-pc-button">
-      <a href="#section4">About</a>
+      <a href="#section4">ABOUT</a>
       </li>
       <li class="nav-pc-button">
-      <a href="#section5">Contact</a>
+      <a href="#section5">CONTACT</a>
       </li>
     </ul>
   </nav>
+
   <article>
     <div id="main-background">
     <section id="section1">
       <svg class="constellation" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
         <!-- 線 -->
-        <line x1="63" y1="63" x2="105" y2="72" class="line" />
-        <line x1="105" y1="72" x2="131" y2="82" class="line" />
-        <line x1="131" y1="82" x2="165" y2="94" class="line" />
-        <line x1="165" y1="94" x2="175" y2="122" class="line" />
-        <line x1="175" y1="122" x2="227" y2="118" class="line" />
-        <line x1="227" y1="118" x2="230" y2="82" class="line" />
+        <line x1="97" y1="42" x2="129" y2="26" class="line" />
+        <line x1="129" y1="26" x2="161" y2="69" class="line" />
+        <line x1="161" y1="69" x2="144" y2="93" class="line" />
+        <line x1="144" y1="93" x2="152" y2="124" class="line" />
+        <line x1="152" y1="124" x2="158" y2="151" class="line" />
+        <line x1="158" y1="151" x2="188" y2="177" class="line" />
 
         <!-- 星 -->
-        <circle cx="63" cy="63" r="2.5" class="star star-big" />
-        <circle cx="105" cy="72"  r="2.5" class="star star-big" />
-        <circle cx="131" cy="82" r="2.5" class="star star-big" />
-        <circle cx="165" cy="94"  r="1.5" class="star star-small" />
-        <circle cx="175" cy="122" r="1.5" class="star star-small" />
-        <circle cx="227" cy="118"  r="1.5" class="star star-small" />
-        <circle cx="230" cy="82" r="2.5" class="star star-big" />
+        <a href="#section2" class="star-link">
+          <circle cx="97" cy="42" r="2.5" class="star star-big" />
+          <text x="55" y="45" class="star-label">WORKS</text>
+        </a>
+        <a href="#section3" class="star-link">
+          <circle cx="129" cy="26"  r="2.5" class="star star-big" />
+          <text x="129" y="15" class="star-label">SKILLS</text>
+        </a>
+        <a href="#section4" class="star-link">
+          <circle cx="161" cy="69" r="2.5" class="star star-big" />
+          <text x="170" y="72" class="star-label">ABOUT</text>
+        </a>
+        <circle cx="144" cy="93"  r="1.5" class="star star-small" />
+        <circle cx="152" cy="124" r="1.5" class="star star-small" />
+        <circle cx="158" cy="151"  r="1.5" class="star star-small" />
+        <a href="#section5" class="star-link">
+          <circle cx="188" cy="177" r="2.5" class="star star-big" />
+          <text x="197" y="180" class="star-label">CONTACT</text>
+        </a>
       </svg>
     </section>
 
@@ -77,21 +90,21 @@
         <h2>WORKS</h2>
         <div class="works-list">
           <a class="works-item" href="">
-            <div class="works-img"><img src="../portfolio/portfolio/img/works/html1.png" alt="html1" /></div>
+            <div class="works-img"><img src="img/works1.png" alt="html1" /></div>
             <p class="works-name">E-catch様 コーポレートサイト</p>
             <p class="works-info">WordPress</p>
           </a>
           <a class="works-item" href="">
-            <div class="works-img"><img src="../portfolio/portfolio/img/works/html2.png" alt="html2" /></div>
+            <div class="works-img"><img src="img/works2.png" alt="html2" /></div>
             <p class="works-name">プロフィールサイト</p>
             <p class="works-info">HTML/CSS/JavaScript/jQuery/レスポンシブ対応</p>
           </a>
           <a class="works-item" href="">
-            <div class="works-img"><img src="../portfolio/portfolio/img/works/wordpress1.png" alt="WordPress" /></div>
+            <div class="works-img"><img src="img/banner1.png" alt="WordPress" /></div>
             <p class="works-name">CBON様 SNS投稿画像コンペ入選</p>
             <p class="works-info">バナー</p>
           </a>
-          <a class="works-item" href="">
+          <!-- <a class="works-item" href="">
             <div class="works-img"><img src="../portfolio/portfolio/img/works/photoshop.png" alt="Photoshop" /></div>
             <p class="works-name">ITスクールのバナー</p>
             <p class="works-info">Photoshop</p>
@@ -105,7 +118,7 @@
             <div class="works-img"><img src="../portfolio/portfolio/img/works/wordpress2.png" alt="WordPress2" /></div>
             <p class="works-name">大学のHP</p>
             <p class="works-info">WordPress/PHP</p>
-          </a>
+          </a> -->
         </div>
       </div>
     </section>
@@ -138,14 +151,6 @@
               </div>
           </div>
           <div class="skill-item">
-            <p class="skill-img"><img src="../portfolio/portfolio/img/skills/photoshop.png" alt="photoshop"></p>
-              <div class="skill-body">
-                <h3 class="skill-name">Adobe Photoshop</h3>
-                <p class="skill-text">
-                    Webサイトに必要不可欠なクリエイティブバナーを作ることが可能です。</p>
-              </div>
-          </div>
-          <div class="skill-item">
             <p class="skill-img"><img src="../portfolio/portfolio/img/skills/jquery.png" alt="jquery"></p>
               <div class="skill-body">
                 <h3 class="skill-name">jQuery</h3>
@@ -154,9 +159,17 @@
               </div>
           </div>
           <div class="skill-item">
+            <p class="skill-img"><img src="../portfolio/portfolio/img/skills/photoshop.png" alt="photoshop"></p>
+              <div class="skill-body">
+                <h3 class="skill-name">Adobe Photoshop</h3>
+                <p class="skill-text">
+                    Webサイトに必要不可欠なクリエイティブバナーを作ることが可能です。</p>
+              </div>
+          </div>
+          <div class="skill-item">
             <p class="skill-img"><img src="../portfolio/portfolio/img/skills/xd.png" alt="adobexd"></p>
               <div class="skill-body">
-                <h3 class="skill-name">Adobe XD</h3>
+                <h3 class="skill-name">Figma</h3>
                 <p class="skill-text">
                     Webサイトのデザインやワイヤーフレームを作ることが可能です。</p>
               </div>
@@ -173,9 +186,9 @@
             <img src="img/about.png" alt="about">
           </p>
           <div class="profile-body">
-            <h4>Riho Kanazawa</h4>
+            <h3>Riho Kanazawa</h3>
             <p>
-              愛知県在住。フリーランスとしてWeb制作をしております。2013年より10年以上自動車業界で務めておりました。予てより趣味でしていたWebサイト制作を2020年より本業にしました。Web制作におけるデザイン、コーディング、スマートフォンサイト対応、WordPressなどが得意分野です。低予算でWebサイトをお作りしますので、お気軽にお問い合わせください。
+              愛知県在住。<br>自動車業界のマーケティング部門で務めるかたわら、Web制作をしております。<br>制作におけるデザイン、コーディング、スマートフォンサイト対応、WordPressなどが得意分野です。低予算でWebサイトをお作りしますので、お気軽にお問い合わせください。
             </p>
           </div>
         </div>
@@ -190,17 +203,25 @@
         </p>
         <div class="contact-list">
           <a href="http://instagram.com/" target="_blank">
-            <img src="../portfolio/portfolio/img/icon_facebook.gif" alt="Instagram">
+            <img src="img/Instagram_Glyph_White.png" alt="Instagram">
           </a>
-          <a href="http://facebook.com/" target="_blank">
-            <img src="../portfolio/portfolio/img/icon_instagram.gif" alt="Facebook">
-          </a>
+          <!-- <a href="http://facebook.com/" target="_blank">
+            <img src="" alt="Facebook">
+          </a> -->
         </div>
       </div>
     </section>
     </div>
   </article>
  
+  <!-- footer -->
+  <footer id="footer" class="">
+    <div class="copyright">&copy;Riefer Design</div>
+  </footer>
+  <!-- /footer -->
+
+ <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+ <script src="main.js"></script>
 </body>
 
 </html>
