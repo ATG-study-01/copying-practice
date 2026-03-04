@@ -341,6 +341,10 @@ h2::before {
  width: 15%;
 }
 
+#contact-notes {
+  font-size: 10px;
+}
+
 /* footer */
 #footer {
   margin: 0 auto;
